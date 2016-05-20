@@ -2,8 +2,9 @@ B = build
 S = src
 T = $S/tests
 H = $T/hello
+A = $T/alu
 
-all:	llvm hello
+all:	llvm
 
 llvm:
 	cd $B && ninja
@@ -11,6 +12,8 @@ llvm:
 clean:
 	cd $B && ninja clean
 
-hello:	
+hello:	all	
 	cd $H && make 
 
+alu:	all
+	cd $A && make

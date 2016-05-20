@@ -1,5 +1,5 @@
 O = -O0
-T = hello
+T = and
 B = ../../../build
 LLC =$B/bin/llc
 
