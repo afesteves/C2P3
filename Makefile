@@ -1,19 +1,12 @@
-B = build
 S = src
 T = $S/tests
 H = $T/hello
 A = $T/alu
 
-all:	llvm
+all:	
 
-llvm:
-	cd $B && ninja
-
-clean:
-	cd $B && ninja clean
-
-hello:	all	
+hello:	
 	cd $H && make 
 
-alu:	all
+alu:	
 	cd $A && make p3

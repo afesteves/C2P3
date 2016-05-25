@@ -1,7 +1,7 @@
 O = -O0
 T = alu
-B = ../../../build
-LLC =$B/bin/llc
+B = ../../../build/Release/bin
+LLC =$B/llc
 
 P3 = p3
 MSP = msp430
