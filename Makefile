@@ -16,4 +16,4 @@ hello:	all
 	cd $H && make 
 
 alu:	all
-	cd $A && make
+	cd $A && make p3
